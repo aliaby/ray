@@ -619,6 +619,7 @@ cc_library(
             "src/ray/core_worker/store_provider/*.cc",
             "src/ray/core_worker/store_provider/memory_store/*.cc",
             "src/ray/core_worker/transport/*.cc",
+            "src/ray/core_worker/ProcStats/*.cpp",
             "src/ray/rpc/worker/*.cc",
         ],
         exclude = [
@@ -630,6 +631,7 @@ cc_library(
         "src/ray/core_worker/*.h",
         "src/ray/core_worker/store_provider/*.h",
         "src/ray/core_worker/store_provider/memory_store/*.h",
+        "src/ray/core_worker/ProcStats/*.h",
         "src/ray/core_worker/transport/*.h",
     ]),
     copts = COPTS,
